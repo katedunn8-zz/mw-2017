@@ -6,6 +6,9 @@
 h1::before {
   content:"";
 }
+dt::after {
+  content: ": ";
+}
 body {
   color:#7A7A7A;
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
@@ -53,7 +56,7 @@ nav{
   padding:38px 20px 0 0;
   text-transform:uppercase;
   font-weight:500;
-  overflow:hidden;
+/*  overflow:hidden;*/
   height:120px;
 }
 nav li {
@@ -64,18 +67,10 @@ nav li a {
   color:#ffffff;
 }
 nav ul {
-  max-width:800px;
+/*  max-width:800px;*/
   float:right;
 }
 li.home a {
-  background-image: url("./images/factory-logo.svg");
-  height:100px;
-  width:157px;
-  overflow:hidden;
-  text-indent:-9999px;
-  display:block;
-  background-size: contain;
-  background-repeat:no-repeat;
   position:absolute;
   left:34px;
   top:18px;
@@ -167,11 +162,11 @@ p.divider {
 /* colearners */
 .colearners {
   background-color:#FAFAFA;
-  padding: 95px 0;
+  padding: 95px 60px;
   margin-top:150px;
-  border:1px solid green;
   position:relative;
   overflow:hidden;
+  clear:both;
 }
 .colearners h3 {
   font-size:1.375rem;
@@ -179,37 +174,30 @@ p.divider {
   font-weight:500;
   margin-bottom:13px;
 }
-.colearners ul {
-  border:1px solid green;
-  float:left;
-  width:100%;
-  position:relative;
-}
-.colearners li {
-  width:25%;
-  text-align:center;
-  border:1px solid red;
-  display:inline-block;
-}
-.colearners li:nth-child(4n+1) {
+.colearners-list li:nth-child(4n+1) {
     clear:left;
 }
-.colearner-profile {
-  border:1px dashed blue;
+.colearners > .colearners-list > li {
+  width:25%;
+  text-align:center;
   float:left;
+  padding: 0 20px 75px 20px;
+}
+.colearner-profile {
   position:relative;
   width:100%;
+  margin-bottom:15px;
 }
 .colearner-profile img {
   border-radius:100%;
   width:100%;
 }
 .colearner-profile p {
-  border:4px solid red;
+  border:4px solid #ffffff;
   border-radius:100%;
   height:110px;
   width:110px;
-  color:red;
+  color:#ffffff;
   font-weight:400;
   font-size:2.5rem;
   text-align:center;
@@ -220,28 +208,6 @@ p.divider {
   top:50%;
   left:50%;
   transform:translate(-50%, -50%);
-}
-.colearner-image {
-  border-radius:100%;
-  background-image: url("./images/colearner-f1.jpg");
-  background-repeat:no-repeat;
-  width:225px;
-  height:225px;
-  padding-top:60px;
-  display:block;
-  background-size: contain;
-}
-p.initials {
-  border:4px solid white;
-  border-radius:100%;
-  height:110px;
-  width:110px;
-  color:#ffffff;
-  font-weight:400;
-  font-size:2.5rem;
-  text-align:center;
-  margin:0 auto;
-  padding-top:35px;
 }
 /* end colearners */
 
@@ -256,7 +222,6 @@ p.initials {
   background-repeat:no-repeat;
   display:inline-block;
   margin:0 5px;
-  float:none;
 }
 .twitter {
   background-position:0px 1px; 
@@ -335,11 +300,12 @@ blockquote {
 .class-details {
   padding:140px 90px 90px;
 }
-.class-details dl {
+dl {
   font-size:2rem;
   margin-bottom: 0em;
   padding-bottom:10px;
   font-weight:300;
+  display:inline-block;
 }
 a.sign-up {
   background-color:transparent;
@@ -389,15 +355,25 @@ p.footer-logo {
 }
 /* end footer */
 
-@media (min-width:769) {
-  
-}
+
 @media (max-width:900px) {
   .instructor-info {
     width:50%;
   }
   blockquote {
     width:75%;
+  }
+  .colearners > .colearners-list > li {
+    width:33.33%;
+  }
+  .colearners {
+    padding: 95px 30px;
+  }
+  .colearners-list li:nth-child(4n+1) {
+    clear:none;
+  }
+  .colearners-list li:nth-child(3n+1) {
+    clear:left;
   }
 }
 @media (max-width:768px) {
@@ -410,14 +386,24 @@ p.footer-logo {
   .course-goals li:nth-child(2n+1) {
     clear:left;
   }
-  .colearners li {
+  .colearners > .colearners-list > li {
     width:50%;
   }
+  .colearners-list li:nth-child(3n+1) {
+    clear:none;
+  }
+  .colearners-list li:nth-child(2n+1) {
+    clear:left;
+  }
+
   .instructor-info {
     width:100%;
   }
   .instructor {
     padding:80px 40px;
+  }
+  h1 {
+    font-size:4rem;
   }
   
 }
@@ -426,7 +412,16 @@ p.footer-logo {
     width: 100%;
     padding-bottom:50px;
   }
+  h1 {
+    font-size:3rem;
+  }
 }
-@media (min-width:320px) and (max-width:479) {
-
-}
+@media (min-width:320px) and (max-width:519px) {
+    .colearners > .colearners-list > li {
+        width:100%;
+        padding: 0 0 45px 0;
+      }
+      .colearners {
+        padding: 95px 30px;
+      }
+    }
