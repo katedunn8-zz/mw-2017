@@ -78,7 +78,7 @@ li.home a {
   text-align: center;
   padding: 260px 0 200px;
   color: #ffffff;
-  background-image: url("./../../images/hero.jpg");
+  background-image: url("../images/hero.jpg");
   background-size: cover;
   background-repeat: no-repeat; }
 
@@ -88,7 +88,7 @@ li.home a {
   font-weight: 300; }
 
 .intro p.mw-icon {
-  background-image: url("./../../images/mw-icon.svg");
+  background-image: url("../images/mw-icon.svg");
   background-repeat: no-repeat;
   height: 30px;
   width: 43px;
@@ -113,7 +113,7 @@ li.home a {
 .intro-text::after {
   content: "";
   display: block;
-  background-image: url("./../../images/divider.svg");
+  background-image: url("../images/divider.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -218,7 +218,7 @@ li.home a {
   text-indent: -9999px;
   height: 20px;
   width: 20px;
-  background-image: url("./../../images/slice.png");
+  background-image: url("../images/slice.png");
   background-repeat: no-repeat;
   display: inline-block;
   margin: 0 5px; }
@@ -239,7 +239,7 @@ li.home a {
 /* instructor */
 .instructor {
   padding: 190px 90px;
-  background-image: url("./../../images/instructor.jpg");
+  background-image: url("../images/instructor.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center right;
@@ -331,14 +331,14 @@ p.address {
   display: inline-block; }
 
 footer {
-  background-image: url("./../../images/footer.jpg");
+  background-image: url("../images/footer.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
   margin: 110px 0 0 0; }
 
 p.footer-logo {
-  background-image: url("./../../images/factory-logo.svg");
+  background-image: url("../images/factory-logo.svg");
   height: 65px;
   width: 102px;
   white-space: nowrap;
