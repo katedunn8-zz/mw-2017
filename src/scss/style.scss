@@ -1,82 +1,7 @@
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-h1::before {
-  content:"";
-}
-dt::after {
-  content: ": ";
-}
-body {
-  color:#7A7A7A;
-  font-family: 'Roboto', Helvetica, Arial, sans-serif;
-  max-width:1190px;
-  margin:0 auto;
-}
-.hide {
-  display:none;
-}
-img {
-  max-width:100%;
-  height:auto;
-}
-a {
-  text-decoration:none;
-}
-ul {
-  margin:0;
-  padding:0;
-}
-li {
-  list-style:none;
-}
-h1 {
-  font-weight:100;
-  font-size:5.75rem;
-  margin:0;
-}
-p {
-  font-size:1.125rem;
-  line-height:27px;
-  margin-top:0;
-}
-
-
-/* nav and header */
-header {
-  float:right;
-  position:relative;
-  overflow:hidden;
-  width:100%;
-}
-nav{
-  color:#ffffff;
-  padding:38px 20px 0 0;
-  text-transform:uppercase;
-  font-weight:500;
-/*  overflow:hidden;*/
-  height:120px;
-
-  li {
-    margin-left:30px;
-    display:inline-block;
-  }
-
-  ul {
-    float:right;
-  }
-
-  a {
-    color:#ffffff;
-  }
-
-  li.home a {
-    position:absolute;
-    left:34px;
-    top:18px;
-  }
-}
-/* end nav and header */
+@import 'partials/general';
+@import 'partials/normalize';
+@import 'partials/header';
+@import 'partials/nav';
 
 
 /* intro */
@@ -240,34 +165,7 @@ nav{
 /* end colearners */
 
 
-/* social media */
-.social li {
-  overflow:hidden;
-  text-indent:-9999px;
-  height:20px;
-  width:20px;
-  background-image: url("../images/slice.png");
-  background-repeat:no-repeat;
-  display:inline-block;
-  margin:0 5px;
-}
-
-.twitter {
-  background-position:0px 1px;
-}
-
-.facebook {
-  background-position:-35px 0px;
-}
-
-.dribbble {
-  background-position:-70px 0px;
-}
-
-.linkedin {
-  background-position:-105px 0px;
-}
-/* end social media */
+@import 'partials/social';
 
 
 /* instructor */
@@ -335,9 +233,7 @@ blockquote {
 /* end adam quote */
 
 
-/* footer */
 @import 'partials/footer';
-/* end footer */
 
 
 @media (max-width:900px) {

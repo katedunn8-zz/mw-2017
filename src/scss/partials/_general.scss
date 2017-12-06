@@ -1,0 +1,39 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+h1::before {
+  content:"";
+}
+body {
+  color:#7A7A7A;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  max-width:1190px;
+  margin:0 auto;
+}
+.hide {
+  display:none;
+}
+img {
+  max-width:100%;
+  height:auto;
+}
+a {
+  text-decoration:none;
+}
+ul {
+  margin:0;
+  padding:0;
+}
+li {
+  list-style:none;
+}
+h1 {
+  font-weight:100;
+  font-size:5.75rem;
+  margin:0;
+}
+p {
+  font-size:1.125rem;
+  line-height:27px;
+  margin-top:0;
+}
