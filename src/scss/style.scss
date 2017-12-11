@@ -81,6 +81,15 @@
     top:40%;
     right:3%;
   }
+  nav {
+    padding-top:20px;
+
+    li {
+      display:block;
+      line-height:3rem;
+      text-align:right;
+    }
+  }
 
 }
 @media (max-width:520px) {
@@ -98,7 +107,7 @@
     width:85%;
     font-size: 6vw;
   }
-    .intro-text p {
+  .intro-quote p {
     font-size:5vw;
     padding: 0 5% 0 5%;
   }
@@ -126,6 +135,10 @@
     right:0;
     margin-top:70px;
     display:block;
+  }
+  li.home a img {
+    width:60%;
+    float:left;
   }
 }
 @media (min-width:300px) and (max-width:450px) {
