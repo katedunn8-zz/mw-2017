@@ -1,11 +1,12 @@
 *, *::before, *::after {
   box-sizing: border-box;
 }
+
 h1::before {
   content:"";
 }
 body {
-  color:#7A7A7A;
+  color:$gray; 
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   max-width:1190px;
   margin:0 auto;

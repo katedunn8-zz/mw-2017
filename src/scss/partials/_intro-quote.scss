@@ -1,0 +1,27 @@
+.intro-quote {
+  margin-top:140px;
+  padding:0 20px;
+  p {
+    font-size:1.875rem;
+    line-height:1.75;
+    letter-spacing:.9px;
+    font-weight:300;
+    color:$light-grey;
+    text-align:center;
+    margin:0 auto;
+    padding: 0 15% 0 15%;
+  }
+}
+
+.intro-quote::after {
+  content:"";
+  display:block;
+  background-image:url("../images/divider.svg");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  height: 4vh;
+  max-height:30px;
+  max-width:85%;
+  margin:90px auto 0;
+}

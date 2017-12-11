@@ -1,0 +1,30 @@
+.adam-quote {
+  max-width:920px;
+  text-align:center;
+  margin:130px auto 0;
+  color:$light-grey;
+  font-weight:500;
+
+  p {
+    margin:0;
+  }
+
+  p:nth-last-child(1) {
+    font-size:1rem;
+    font-weight:400;
+  }
+
+  a {
+    text-decoration:underline;
+    color:$light-grey;
+  }
+}
+
+blockquote {
+  color:$orange;
+  font-weight:300;
+  font-style:italic;
+  margin:0 auto 75px;
+  width:90%;
+  font-size: 3rem;
+}

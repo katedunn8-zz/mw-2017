@@ -18,7 +18,7 @@ a.sign-up {
   font-size:1.875rem;
   font-weight:500;
   padding: 30px 100px;
-  border: 5px solid #ffffff;
+  border: 5px solid $white;
   text-decoration:none;
   color:white;
   float:right;
@@ -26,8 +26,8 @@ a.sign-up {
 }
 
 a.sign-up:hover {
-  background-color:white;
-  color:#E66244;
+  background-color:$white;
+  color:$orange;
   transition: ease-in-out .3s;
 }
 
@@ -35,7 +35,7 @@ footer {
   background-image:url("../images/footer.jpg");
   background-repeat:no-repeat;
   background-size:cover;
-  color:#ffffff;
+  color:$white;
   margin:110px 0 0 0;
 }
 
