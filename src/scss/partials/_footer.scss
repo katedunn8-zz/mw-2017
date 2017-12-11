@@ -1,5 +1,6 @@
 .class-details {
   padding:140px 3% 90px;
+
   p {
     font-size:2rem;
     margin-bottom: 0em;
@@ -41,7 +42,7 @@ footer {
 
 .footer-bottom {
   background-color: rgba(54, 25, 25, .2);
-  padding:30px 3%;
+  padding:20px 3% 30px;
 }
 
 p.footer-logo {
@@ -53,13 +54,14 @@ p.footer-logo {
   text-indent:-9999px;
   background-size: contain;
   background-repeat:no-repeat;
-  display:inline-block;
+  float:left;
   margin:0;
 }
 
 p.address {
   font-size:.875rem;
   line-height:1.25;
-  margin:0 0 0 30px;
+  margin:0;
+  padding:25px 0 0 30px;
   display:inline-block;
 }
