@@ -2,7 +2,7 @@ nav{
   color:#ffffff;
   padding:38px 20px 0 0;
   text-transform:uppercase;
-  font-weight:500;
+  @extend %font-bold;
 /*  overflow:hidden;*/
   height:120px;
 

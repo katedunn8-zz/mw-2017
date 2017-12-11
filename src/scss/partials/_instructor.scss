@@ -13,13 +13,13 @@
 
   h2 {
     font-size:1.125rem;
-    font-weight:300;
+    @extend %font-regular;
     text-transform:uppercase;
   }
 
   span {
     font-size:2rem;
-    font-weight:500;
+    @extend %font-bold;
     text-transform:uppercase;
     padding:22px 0 5px;
     margin:0;

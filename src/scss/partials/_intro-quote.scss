@@ -5,7 +5,7 @@
     font-size:1.875rem;
     line-height:1.75;
     letter-spacing:.9px;
-    font-weight:300;
+    @extend %font-regular;
     color:$light-grey;
     text-align:center;
     margin:0 auto;

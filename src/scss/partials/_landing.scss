@@ -9,7 +9,7 @@
   p {
     font-size:1.5rem;
     margin-bottom:0;
-    font-weight:300;
+    @extend %font-regular;
   }
 
   p.mw-icon {

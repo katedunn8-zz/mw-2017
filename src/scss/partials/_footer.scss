@@ -1,10 +1,10 @@
 .class-details {
-  padding:140px 7% 90px;
+  padding:140px 3% 90px;
   p {
     font-size:2rem;
     margin-bottom: 0em;
     padding-bottom:10px;
-    font-weight:300;
+    @extend %font-light;
   }
 }
 
@@ -16,7 +16,7 @@ a.sign-up {
   background-color:transparent;
   text-transform:uppercase;
   font-size:1.875rem;
-  font-weight:500;
+  @extend %font-bold;
   padding: 30px 100px;
   border: 5px solid $white;
   text-decoration:none;
@@ -41,7 +41,7 @@ footer {
 
 .footer-bottom {
   background-color: rgba(54, 25, 25, .2);
-  padding:30px 7%;
+  padding:30px 3%;
 }
 
 p.footer-logo {

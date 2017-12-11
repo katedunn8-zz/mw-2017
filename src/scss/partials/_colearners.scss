@@ -1,15 +1,19 @@
 .colearners {
-  background-color:#FAFAFA;
-  padding: 95px 5%;
+  background-color:$background-gray;
+  padding: 95px 3%;
   margin-top:30px;
   position:relative;
   overflow:hidden;
   clear:both;
 
+    h2 {
+      @extend %h2;
+    }
+
   h3 {
     font-size:1.375rem;
     text-transform:none;
-    font-weight:500;
+    @extend %font-bold;
     margin-bottom:13px;
   }
 }

@@ -3,7 +3,7 @@
   text-align:center;
   margin:130px auto 0;
   color:$light-grey;
-  font-weight:500;
+  @extend %font-bold;
 
   p {
     margin:0;
@@ -11,7 +11,7 @@
 
   p:nth-last-child(1) {
     font-size:1rem;
-    font-weight:400;
+    @extend %font-medium;
   }
 
   a {
@@ -22,7 +22,7 @@
 
 blockquote {
   color:$orange;
-  font-weight:300;
+  @extend %font-regular;
   font-style:italic;
   margin:0 auto 75px;
   width:90%;
