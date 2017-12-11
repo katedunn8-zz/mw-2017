@@ -1,5 +1,7 @@
 .class-details {
   padding:140px 3% 90px;
+  display:block;
+  position:relative;
 
   p {
     font-size:2rem;
@@ -21,9 +23,11 @@ a.sign-up {
   padding: 30px 100px;
   border: 5px solid $white;
   text-decoration:none;
-  color:white;
-  float:right;
+  color:$white;
   transition: ease-in-out .3s;
+  position:absolute;
+  top:40%;
+  right:3%;
 }
 
 a.sign-up:hover {
