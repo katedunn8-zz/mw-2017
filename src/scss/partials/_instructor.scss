@@ -1,0 +1,27 @@
+.instructor {
+  padding:190px 90px;
+  background-image:url("../images/instructor.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center right;
+  color:$white;
+  clear:both;
+}
+
+.instructor-info {
+  width:38%;
+
+  h2 {
+    font-size:1.125rem;
+    @extend %font-regular;
+    text-transform:uppercase;
+  }
+
+  span {
+    font-size:2rem;
+    @extend %font-bold;
+    text-transform:uppercase;
+    padding:22px 0 5px;
+    margin:0;
+  }
+}

@@ -1,0 +1,28 @@
+.course-goals {
+  margin-top:110px;
+  position: relative;
+  overflow: hidden;
+  padding: 0 3%;
+
+  h2 {
+    @extend %h2;
+  }
+
+  h3 {
+    font-size:1rem;
+    text-transform:uppercase;
+    margin:0;
+    padding-bottom:2px;
+    @extend %font-extrabold;
+  }
+
+  li {
+    float:left;
+    width: 33.33%;
+    padding: 0 25px 100px 25px;
+  }
+
+  li:nth-child(3n+1) {
+      clear:left;
+  }
+}

@@ -1,0 +1,22 @@
+.landing {
+  text-align:center;
+  padding:260px 0 200px;
+  color:$white;
+  background-image: url("../images/hero.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+
+  p {
+    font-size:1.5rem;
+    margin-bottom:0;
+    @extend %font-regular;
+  }
+
+  p.mw-icon {
+    background-image:url("../images/mw-icon.svg");
+    background-repeat:no-repeat;
+    height:30px;
+    width:43px;
+    margin:20px auto 0;
+  }
+}

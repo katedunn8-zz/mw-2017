@@ -1,0 +1,27 @@
+nav{
+  color:#ffffff;
+  padding:38px 20px 0 0;
+  text-transform:uppercase;
+  @extend %font-bold;
+/*  overflow:hidden;*/
+  height:120px;
+
+  li {
+    margin-left:30px;
+    display:inline-block;
+  }
+
+  ul {
+    float:right;
+  }
+
+  a {
+    color:#ffffff;
+  }
+
+  li.home a {
+    position:absolute;
+    left:34px;
+    top:18px;
+  }
+}
